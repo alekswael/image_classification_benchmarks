@@ -6,7 +6,7 @@ source ./cifar10_classifiers_venv/Scripts/activate
 
 # Install requirements
 python -m pip install --upgrade pip
-python -m pip install -r ./src/requirements.txt
+python -m pip install -r ./requirements.txt
 
 # deactivate
 deactivate
