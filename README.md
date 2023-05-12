@@ -1,29 +1,27 @@
-<!-- PROJECT LOGO -->
 <br />
-  <h1 align="center">Visual Analytics Portfolio</h1> 
-  <h2 align="center">Assignment 2: Classification benchmarks with Logistic Regression and Neural Networks</h2> 
-  <h3 align="center">Cultural Data Science, 2023</h3> 
-  <p align="center">
-  Auther: Aleksander Moeslund Wael <br>
+  <h1 align="center">Assignment 2: Classification benchmarks with Logistic Regression and Neural Networks</h1> 
+  <h2 align="center">Cultural Data Science, 2023</h2> 
+  <h3 align="center">
+  Author: Aleksander Moeslund Wael <br>
   Student no. 202005192
-  </p>
+  </h3>
 </p>
 
-
-## Assingnment notes (Ross)
+## Assignment notes (Ross)
 For this assignment, we'll be writing scripts which classify the Cifar10 dataset.
 
 You should write code which does the following:
 
-    Load the Cifar10 dataset
-    Preprocess the data (e.g. greyscale, reshape)
-    Train a classifier on the data
-    Save a classification report
+1. Load the Cifar10 dataset
+2. Preprocess the data (e.g. greyscale, reshape)
+3. Train a classifier on the data
+4. Save a classification report
 
 You should write one script which does this for a logistic regression classifier and one which does it for a neural network classifier. In both cases, you should use the machine learning tools available via scikit-learn.
 
+---
 ## Introduction
-This repository contains scripts for performing image classifcation on the Cifar10 dataset using either logistic regression or a neural network classifier.
+This repository contains scripts for performing image classifcation on the Cifar10 dataset using logistic regression and a neural network classifier.
 
 ### Data
 The [Cifar10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) consists of 60K 32x32 colour images in 10 classes, with 6K images per class.
@@ -35,7 +33,7 @@ The `src` folder contains two Python scripts, `lr_classifier.py` and `nn_classif
 The `lr_classifier.py` script uses multinomial logistic regression to classify the images, whereas the `nn_classifier.py` script uses a multi-layer Perceptron classifier, both models implemented with [scikit-learn](https://scikit-learn.org/stable/) for Python.
 
 ### Pipeline
-The pipeline structure (identical for both scripts) is as follows:
+The Python scripts are structured as follows:
 1. Import data
 2. Preprocess data
 3. Load the model
