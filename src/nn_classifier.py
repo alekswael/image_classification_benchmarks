@@ -20,7 +20,7 @@ from tensorflow.keras.datasets import cifar10
 import numpy as np
 
 def input_parser(): # This is the function that parses the input arguments when run from the terminal.
-    ap = argparse.ArgumentParser() # This is the argument parser. I add the arguments below.
+    ap = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # This is the argument parser. I add the arguments below.
     ap.add_argument("-hls",
                     "--hidden_layer_sizes",
                     help="The ith element represents the number of neurons in the ith hidden layer. If a single layer, DO NOT put a comma. Specify values WITHOUT SPACES.",

@@ -21,7 +21,7 @@ import numpy as np
 
 
 def input_parser(): # This is the function that parses the input arguments when run from the terminal.
-    ap = argparse.ArgumentParser() # This is the argument parser. I add the arguments below.
+    ap = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # This is the argument parser. I add the arguments below.
     ap.add_argument("-t",
                     "--tol",
                     help="Tolerance for stopping criteria.",

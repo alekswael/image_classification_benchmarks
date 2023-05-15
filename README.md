@@ -48,8 +48,8 @@ The Python scripts are structured as follows:
 ### 1. Clone repository to desired directory
 
 ```bash
-git clone https://github.com/AU-CDS/assignment2-image-classification-alekswael
-cd assignment2-image-classification-alekswael
+git clone https://github.com/alekswael/assignment2-image-classification-
+cd assignment2-image-classification
 ```
 ### 2. Run setup script 
 
@@ -73,41 +73,38 @@ The script does the following:
 
 ```bash
 bash WIN_run_lr_classifier.sh
+bash WIN_run_nn_classifier.sh
 ```
 
 ## Note on model tweaks
 Some model parameters can be set through the ``argparse`` module. However, this requires running the Python script seperately OR altering the `run*.sh` file to include the arguments. The Python scripts are located in the `src` folder. Make sure to activate the environment before running the Python script.
 
 ```
-Arguments for the lr_classifier.py script.
-
 lr_classifier.py [-h] [-t TOL] [-s SOLVER] [-m MAX_ITER] [-p PENALTY]
 
 options:
   -h, --help            show this help message and exit
-  -t TOL, --tol TOL     Tolerance for stopping criteria.
+  -t TOL, --tol TOL     Tolerance for stopping criteria. (default: 0.1)
   -s SOLVER, --solver SOLVER
-                        Algorithm to use in the optimization problem. Default is lbfgs. See scikit-learn documentatio for more info.
+                        Algorithm to use in the optimization problem. Default is lbfgs. See scikit-learn documentatio for more info. (default: saga)
   -m MAX_ITER, --max_iter MAX_ITER
-                        Maximum number of iterations taken for the solvers to converge.
+                        Maximum number of iterations taken for the solvers to converge. (default: 100)
   -p PENALTY, --penalty PENALTY
-                        Specify the norm of the penalty.
+                        Specify the norm of the penalty. (default: none)
 ```
 ```
-Arguments for the nn_classifier.py script.
-
 nn_classifier.py [-h] [-hls HIDDEN_LAYER_SIZES] [-i MAX_ITER] [-l LEARNING_RATE] [-s EARLY_STOPPING]
 
 options:
   -h, --help            show this help message and exit
   -hls HIDDEN_LAYER_SIZES, --hidden_layer_sizes HIDDEN_LAYER_SIZES
-                        The ith element represents the number of neurons in the ith hidden layer. If a single layer, DO NOT put a comma. Specify values WITHOUT SPACES.
+                        The ith element represents the number of neurons in the ith hidden layer. If a single layer, DO NOT put a comma. Specify values WITHOUT SPACES. (default: 64,10)
   -i MAX_ITER, --max_iter MAX_ITER
-                        Maximum number of iterations.
+                        Maximum number of iterations. (default: 70)
   -l LEARNING_RATE, --learning_rate LEARNING_RATE
-                        Learning rate schedule for weight updates
+                        Learning rate schedule for weight updates (default: adaptive)
   -s EARLY_STOPPING, --early_stopping EARLY_STOPPING
-                        Whether to use early stopping to terminate training when validation score is not improving.
+                        Whether to use early stopping to terminate training when validation score is not improving. (default: True)
 ```
 ## Repository structure
 This repository has the following structure:
