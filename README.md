@@ -5,7 +5,7 @@
   </h3>
 </p>
 
-## Introduction
+## About the project
 This repository contains scripts for performing image classifcation on the Cifar10 dataset using logistic regression and a neural network classifier.
 
 ### Data
