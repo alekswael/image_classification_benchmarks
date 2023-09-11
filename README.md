@@ -1,25 +1,10 @@
 <br />
-  <h1 align="center">Assignment 2: Classification benchmarks with Logistic Regression and Neural Networks</h1> 
-  <h2 align="center">Cultural Data Science, 2023</h2> 
+  <h1 align="center">Classification benchmarks with Logistic Regression and Neural Networks</h1> 
   <h3 align="center">
   Author: Aleksander Moeslund Wael <br>
-  Student no. 202005192
   </h3>
 </p>
 
-## Assignment notes (Ross)
-For this assignment, we'll be writing scripts which classify the Cifar10 dataset.
-
-You should write code which does the following:
-
-1. Load the Cifar10 dataset
-2. Preprocess the data (e.g. greyscale, reshape)
-3. Train a classifier on the data
-4. Save a classification report
-
-You should write one script which does this for a logistic regression classifier and one which does it for a neural network classifier. In both cases, you should use the machine learning tools available via scikit-learn.
-
----
 ## Introduction
 This repository contains scripts for performing image classifcation on the Cifar10 dataset using logistic regression and a neural network classifier.
 
@@ -48,8 +33,8 @@ The Python scripts are structured as follows:
 ### 1. Clone repository to desired directory
 
 ```bash
-git clone https://github.com/alekswael/assignment2-image-classification-
-cd assignment2-image-classification
+git clone https://github.com/alekswael/image_classification_benchmarks
+cd image_classification_benchmarks
 ```
 ### 2. Run setup script 
 
